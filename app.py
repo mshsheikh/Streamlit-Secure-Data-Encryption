@@ -104,7 +104,7 @@ def handle_lockout():
         if st.button("Return to Login"):
             st.rerun()
 
-# Function to handle main application view
+# app view handler
 def handle_main_view():
     st.title("Secure Data Encryption System")
     
