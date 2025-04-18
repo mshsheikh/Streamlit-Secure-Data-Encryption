@@ -170,7 +170,7 @@ def handle_main_view():
         st.session_state.current_view = 'login'
         st.rerun()
 
-# Main app flow
+# app flow
 if st.session_state.locked_out:
     handle_lockout()
 elif not st.session_state.authenticated:
