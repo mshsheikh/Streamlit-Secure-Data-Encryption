@@ -6,7 +6,7 @@ from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 import os
 import time
 
-# App title and configuration
+# title and config.
 st.set_page_config(page_title="Secure Data Encryption System", layout="centered")
 
 # Initialize session state variables if they don't exist
