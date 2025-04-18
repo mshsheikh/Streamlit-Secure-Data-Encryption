@@ -23,9 +23,9 @@ if 'authenticated' not in st.session_state:
 if 'current_view' not in st.session_state:
     st.session_state.current_view = 'login'
 
-# Constants
+# fixed
 MAX_FAILED_ATTEMPTS = 3
-LOCKOUT_DURATION = 30  # seconds
+LOCKOUT_DURATION = 30  # sec.
 
 # Function to derive a key from a password
 def get_key_from_password(password, salt=None):
