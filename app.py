@@ -178,7 +178,7 @@ elif not st.session_state.authenticated:
 else:
     handle_main_view()
 
-# Display the current stored data IDs (just the IDs, not the data)
+# data IDs display
 if st.session_state.authenticated and st.session_state.current_view == 'main':
     st.sidebar.header("Stored Data IDs")
     if st.session_state.stored_data:
