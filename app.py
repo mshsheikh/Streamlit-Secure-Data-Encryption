@@ -27,7 +27,7 @@ if 'current_view' not in st.session_state:
 MAX_FAILED_ATTEMPTS = 3
 LOCKOUT_DURATION = 30  # sec.
 
-# Function to derive a key from a password
+# key derive
 def get_key_from_password(password, salt=None):
     if salt is None:
         salt = os.urandom(16)
