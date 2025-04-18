@@ -87,7 +87,7 @@ def handle_login():
         else:
             st.error("Invalid username or password. Please try again.")
 
-# Function to handle lockout
+# logout handler
 def handle_lockout():
     current_time = time.time()
     remaining_time = max(0, st.session_state.locked_until - current_time)
