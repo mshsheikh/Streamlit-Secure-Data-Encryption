@@ -58,7 +58,7 @@ def decrypt_data(encrypted_data, password, salt):
     except Exception:
         return "", False
 
-# Function to verify the passkey
+# passkey verification
 def verify_passkey(data_id, passkey):
     if data_id not in st.session_state.stored_data:
         return False
