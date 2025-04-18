@@ -69,7 +69,7 @@ def verify_passkey(data_id, passkey):
     _, success = decrypt_data(encrypted_data, passkey, salt)
     return success
 
-# Function to handle login
+# login handler
 def handle_login():
     st.title("Secure Data Encryption System")
     st.subheader("Login")
