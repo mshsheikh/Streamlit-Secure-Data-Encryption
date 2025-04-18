@@ -48,7 +48,7 @@ def encrypt_data(data, password):
     encrypted_data = fernet.encrypt(data.encode())
     return encrypted_data, salt
 
-# Function to decrypt data
+# data decryption
 def decrypt_data(encrypted_data, password, salt):
     try:
         key, _ = get_key_from_password(password, salt)
