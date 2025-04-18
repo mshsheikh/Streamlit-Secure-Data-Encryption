@@ -11,7 +11,7 @@ st.set_page_config(page_title="Secure Data Encryption System", layout="centered"
 
 # initialize session
 if 'stored_data' not in st.session_state:
-    st.session_state.stored_data = {}  # Dictionary to store encrypted data
+    st.session_state.stored_data = {}  # encrypted data (Dictionary)
 if 'failed_attempts' not in st.session_state:
     st.session_state.failed_attempts = 0
 if 'locked_out' not in st.session_state:
