@@ -9,7 +9,7 @@ import time
 # title and config.
 st.set_page_config(page_title="Secure Data Encryption System", layout="centered")
 
-# Initialize session state variables if they don't exist
+# initialize session
 if 'stored_data' not in st.session_state:
     st.session_state.stored_data = {}  # Dictionary to store encrypted data
 if 'failed_attempts' not in st.session_state:
