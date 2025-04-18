@@ -41,7 +41,7 @@ def get_key_from_password(password, salt=None):
     key = base64.urlsafe_b64encode(kdf.derive(password.encode()))
     return key, salt
 
-# Function to encrypt data
+# data encryption
 def encrypt_data(data, password):
     key, salt = get_key_from_password(password)
     fernet = Fernet(key)
